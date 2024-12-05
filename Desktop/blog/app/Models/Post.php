@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 use App\Models\Category;
 class Post extends Model
 {
@@ -30,4 +31,9 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
+    public static function generateSlug($title)
+{
+    return Str::slug($title, '-');
+}
+
 }

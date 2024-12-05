@@ -139,6 +139,9 @@
     <script src="assets/js/boxicons.min.js"></script>
     <!-- Custom js -->
     <script src="assets/js/custom.js"></script>
+    <!-- ck editor javascript -->
+    <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+
 </body>
 
 </html>
